@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUTORÍAS KLEN</title>
     <link rel="icon" href="logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -24,6 +25,14 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+	.container-follow-us {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+	
 
         /* Header */
         header {
@@ -169,6 +178,12 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
 
+	    /* Follow us Section */
+        .follow-us {
+            padding: 10px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -176,6 +191,15 @@
             color: #333;
             position: relative;
         }
+
+	.section-follow-us {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+            position: relative;
+        }
+
 
         .section-title::after {
             content: '';
@@ -423,6 +447,24 @@
             padding: 2rem 0;
             text-align: center;
         }
+        
+        .social-icons {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 2.5rem;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #667eea;
+            transform: scale(1.1);
+        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -614,6 +656,20 @@
                         <button type="submit" class="submit-btn">Enviar Mensaje</button>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="siguenos" class="follow-us">
+        <div class="container-follow-us">
+            <h2 class="section-follow-us">¡ Síguenos en nuestras redes sociales !</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tutorias_klen/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100086934633913&mibextid=LQQJ4d" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
             </div>
         </div>
     </section>
