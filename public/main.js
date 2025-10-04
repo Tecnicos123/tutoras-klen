@@ -1,3 +1,11 @@
+// Hamburger menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -8,6 +16,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
+        }
+
+        // Close the menu if it's open
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
         }
     });
 });
@@ -52,7 +65,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     const servicioNombre = servicios[servicio] || 'No especificado';
     
     // Create WhatsApp message
-    let whatsappMessage = `¡Hola! Me interesa contactar con EduSupport 📚\n\n`;
+    let whatsappMessage = `¡Hola! Me interesa contactar con Tutorías Klen 📚\n\n`;
     whatsappMessage += `👤 *Nombre:* ${nombre}\n`;
     whatsappMessage += `📧 *Email:* ${email}\n`;
     if (telefono) whatsappMessage += `📞 *Teléfono:* ${telefono}\n`;
